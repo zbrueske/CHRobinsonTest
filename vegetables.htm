@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VeggieDeliveries</title>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body style="background-color:lightgreen">
+<h1>Veggie Deliveries</h1>
+
+<table style="width:100%; background-color:white">
+  <tr>
+    <td></td>
+    <td>Vegetable</td>
+    <td>Price</td>
+    <td>Description</td>
+    <td>Please enter the desired ammount of each vegetable below.</td>
+  </tr>
+  <tr>
+    <td><img src="carrot.jpg" alt="Carrot" style="width:150px;height:150px;"></td>
+    <td>Carrot</td>
+    <td>$1.00</td> 
+    <td>A good source of Vitamin A, Vitamin K, and Vitamin B6.</td>
+    <td><button onclick= "removeCarrot()">Remove 1 Carrot From Cart.</button></td>
+    <td><button onclick= "addCarrot()">Add 1 Carrot To Cart.</button></td>  
+  </tr>
+  <tr>
+    <td><img src="broccoli.jpg" alt="Broccoli" style="width:150px;height:150px;"></td>
+    <td>Broccoli</td>
+    <td>$2.00</td> 
+    <td>A good source of Vitamin C.</td>
+    <td><button onclick="removeBroccoli()">Remove 1 Broccoli From Cart.</button></button></td>
+    <td><button onclick="addBroccoli()">Add 1 Broccoli To Cart.</button></td>  
+  </tr>
+  <tr>
+    <td><img src="onion.jpeg" alt="Onion" style="width:150px;height:150px;"></td>
+    <td>Onion</td>
+    <td>$2.00</td>
+    <td>No real nutritional value, but adds great taste.</td>
+    <td><button onclick="removeOnion()">Remove 1 Onion From Cart.</button></button></td>
+    <td><button onclick="addOnion()">Add 1 Onion To Cart.</button></td>  
+  </tr>
+  <tr>
+    <td><img src="asparagus.jpg" alt="Asparagus" style="width:150px;height:150px;"></td>
+    <td>Asparagus</td>
+    <td>$2.00</td>
+    <td>Good source of pretty much everything your body needs, from Calcium to Potassium.</td>
+    <td><button onclick="removeAsparagus()">Remove 1 Asparagus From Cart.</button></button></td>
+    <td><button onclick="addAsparagus()">Add 1 Asparagus To Cart.</button></td>  
+  </tr>
+  <tr>
+    <td><img src="bellpepper.jpg" alt="Bell Pepper" style="width:150px;height:150px;"></td>
+    <td>Bell Pepper</td>
+    <td>$1.00</td>
+    <td>Rich sources of antioxidants and Vitamin C.</td>
+    <td><button onclick="removePepper()">Remove 1 Bell Pepper From Cart.</button></button></td>
+    <td><button onclick="addPepper()">Add 1 Bell Pepper To Cart.</button></td>
+</table>
+
+<p>In Your Shopping Cart:</p>
+<p>Number of carrots: <span id="carrots">0</span></p>
+<p>Number of broccoli: <span id="broccoli">0</span></p>
+<p>Number of onions: <span id="onions">0</span></p>
+<p>Number of asparagus: <span id="asparagus">0</span></p>
+<p>Number of bell peppers: <span id="peppers">0</span></p>
+<p>Your total is: $<span id="price">0<span></p>
+
+</body>
+</html>
